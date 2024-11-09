@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+.contenedor {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.nombres {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-top: 40%;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los nombres */
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.nombress{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-top: 10%;
+  justify-content: center;
+  gap: 20px; /* Espacio entre los nombres */
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+/* Definimos la animación */
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px); /* Los elementos suben desde 20px */
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.columna {
+    background-color: #e2e2e2;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 30%;
+    text-align: center;
+} 
+.columna a {
+    color: rgb(66, 56, 56); 
+    display: flex;        
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;  
+    text-decoration: none;  
+}
+
+.columna a:hover {
+  color: black;
+}
+
+
+/* Pie de Página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+} 
+.circles { 
+    width: 0;   
+    height: 0;
+    border-radius: 50% solid transparent; 
+    border-right: 50px solid transparent; 
+    border-bottom: 50px solid blue; 
+    animation: slide 5s infinite;
+} 
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form_field:placeholder-shown ~ .form_label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #116399, #38caef);
+    border-image-slice: 1;
+  }
+  
+  .form_field:focus ~ .form_label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #38caef;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form_field:required, .form_field:invalid {
+    box-shadow: none;
+  } 
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    color: #0f1923;
+    cursor: pointer;
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .button::before,
+  .button::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid #7D8082;
+    transition: all .15s ease;
+  }
+  
+  .button::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .button::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .button:active,
+  .button:focus {
+    outline: none;
+  }
+  
+  .button:active::before,
+  .button:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .button:active::before {
+    top: 3px;
+  }
+  
+  .button:active::after {
+    bottom: 3px;
+  }
+  
+  .button_lg {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #0f1923;
+    overflow: hidden;
+    box-shadow: inset 0px 0px 0px 1px transparent;
+  }
+  
+  .button_lg::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2px;
+    height: 2px;
+    background-color: #0f1923;
+  }
+  
+  .button_lg::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 4px;
+    background-color: #0f1923;
+    transition: all .2s ease;
+  }
+  
+  .button_sl {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: -1px;
+    left: -8px;
+    width: 0;
+    background-color: #ff4655;
+    transform: skew(-15deg);
+    transition: all .2s ease;
+  }
+  
+  .button_text {
+    position: relative;
+  }
+  
+  .button:hover {
+    color: #0f1923;
+  }
+  
+  .button:hover .button_sl {
+    width: calc(100% + 15px);
+  }
+  
+  .button:hover .button_lg::after {
+    background-color: #fff;
+  } 
+img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgb(140, 140, 151);
+    animation: spin 2s infinite linear; 
+    animation-name: show;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}  .animation {
+    width: 50px; height: 50px;
+    background-color: rgb(132, 132, 146);
+    animation: cambio 5s infinite;
+
+
+}
+
+@keyframes show
+{
+0% 
+{
+    background-color: rgb(73, 73, 73);
+    width: 50px; height: 50px;
+
+}
+50% 
+{
+    background-color: rgb(59, 59, 59);
+    width: 80px; height: 80px;
+
+}
+100% {
+    background-color: rgb(137, 137, 141);
+    width: 50px; height: 50px;
+}
+}
+
+
+@keyframes slide {
+    0% { border-right-color: blue; }
+    100% { border-right-color: red; }
+}
+
+.section li {
+  text-decoration: none;
+  list-style-type: none;
+}
