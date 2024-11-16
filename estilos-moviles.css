@@ -1,0 +1,95 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+.nav-tabs {
+    padding-left: 0;
+    text-align: center;
+}
+
+.nav-item {
+    margin-bottom: 10px;
+}
+
+
+.convocatoria img {
+    width: 100%; 
+    height: auto;
+}
+
+
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutus h1 {
+    margin-bottom: 10px;
+}
+
+
+.carousel-inner img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.formulario {
+    padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+button {
+    width: 100%;
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+
+footer img {
+    width: 100px;
+    height: auto;
+}
+
+
+@media (max-width: 768px) {
+    footer {
+        position: relative; 
+        width: 100%;
+        padding: 10px;
+        bottom: auto; /* Asegura que el footer no se quede pegado al fondo */
+    }
+}
+
+
+@media (min-width: 769px) {
+    footer {
+        position: fixed; 
+        bottom: 0;
+        width: 100%;
+    }
+}
+
