@@ -83,7 +83,26 @@ nav a:hover {
     border-radius: 5px;
     width: 30%;
     text-align: center;
-} 
+}
+    .columna .materiales {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: rgb(140, 140, 151);
+      animation: spin 2s infinite linear; 
+      animation-name: show;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+  }  .animation {
+      width: 50px; height: 50px;
+      background-color: rgb(132, 132, 146);
+      animation: cambio 5s infinite;
+  
+  
+  }
+
 .columna a {
     color: rgb(66, 56, 56); 
     display: flex;        
@@ -294,24 +313,7 @@ footer {
   .button:hover .button_lg::after {
     background-color: #fff;
   } 
-img {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    background-color: rgb(140, 140, 151);
-    animation: spin 2s infinite linear; 
-    animation-name: show;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-}  .animation {
-    width: 50px; height: 50px;
-    background-color: rgb(132, 132, 146);
-    animation: cambio 5s infinite;
 
-
-}
 
 @keyframes show
 {
@@ -343,3 +345,24 @@ img {
   text-decoration: none;
   list-style-type: none;
 }
+
+.hola {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+  margin: 20px 15px; /* Añadido margen superior e inferior (20px) y lateral (15px) */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto elegante */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación suave para interacciones */
+}
+
+.hola:hover {
+  transform: scale(1.1); /* Aumenta un poco el tamaño al pasar el ratón */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Aumenta la sombra al hacer hover */
+}
+
+span {
+  display: inline-block;
+}
+
